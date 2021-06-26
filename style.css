@@ -1,0 +1,222 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+body .container {
+  width: 80%;
+}
+
+body .container .process-box {
+  width: 300px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: black;
+  -wekit-backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+body .container .process-box .txt {
+  font-size: 0.9rem;
+  display: inline-block;
+  letter-spacing: 0.02rem;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 0.1rem;
+}
+
+body .container .process-box .loaders {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+
+body .container .process-box .loaders .dot {
+  width: 5px;
+  margin-right: 0.1rem;
+  background-color: #fff;
+  border-radius: 100%;
+  height: 5px;
+  -webkit-animation: connecting 0.3s infinite;
+          animation: connecting 0.3s infinite;
+  opacity: 1;
+}
+
+body .container .process-box .loaders .dot1 {
+  width: 5px;
+  margin-right: 0.1rem;
+  background-color: #fff;
+  border-radius: 100%;
+  height: 5px;
+  -webkit-animation: connecting 0.4s infinite;
+          animation: connecting 0.4s infinite;
+  opacity: 1;
+}
+
+body .container .process-box .loaders .dot2 {
+  width: 5px;
+  margin-right: 0.1rem;
+  background-color: #fff;
+  border-radius: 100%;
+  height: 5px;
+  -webkit-animation: connecting 0.5s infinite;
+          animation: connecting 0.5s infinite;
+  opacity: 1;
+}
+
+body .container .card {
+  width: 300px;
+  height: auto;
+  margin: 20px 0;
+  padding: 2%;
+}
+
+body .container .card .top_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  height: auto;
+}
+
+body .container .card .top_nav .avatar_thumbnails {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+body .container .card .top_nav .username {
+  width: 150px;
+  height: 20px;
+  border-radius: 0.5rem;
+}
+
+body .container .card .body {
+  padding: 2%;
+}
+
+body .container .card .body .post {
+  width: 100%;
+  height: 15px;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+body .container .card .body .post:last-child {
+  width: 70%;
+}
+
+body .container .spinner {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  border: 0.8rem solid #f3f3f3;
+  border-top: 0.8rem solid green;
+  border-bottom: 0.8rem solid red;
+  border-right: 0.8rem solid blue;
+  border-left: 0.8rem solid yellow;
+  border-radius: 100%;
+  -webkit-animation: spinner 2s linear infinite;
+          animation: spinner 2s linear infinite;
+}
+
+.skelecton {
+  background-color: #f3f3f3;
+  opacity: 1;
+  -webkit-animation: skelecton_loading 2s infinite ease-in-out 0.8s;
+          animation: skelecton_loading 2s infinite ease-in-out 0.8s;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes skelecton_loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes skelecton_loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes connecting {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes connecting {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+/*# sourceMappingURL=style.css.map */
