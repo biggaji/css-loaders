@@ -75,8 +75,8 @@ body .container .process-box .loaders .dot2 {
   background-color: #fff;
   border-radius: 100%;
   height: 5px;
-  -webkit-animation: connecting 0.5s infinite;
-          animation: connecting 0.5s infinite;
+  -webkit-animation: connecting 0.5s infinite linear;
+          animation: connecting 0.5s infinite linear;
   opacity: 1;
 }
 
